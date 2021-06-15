@@ -1,0 +1,10 @@
+<div class="movies-list">
+  <app-movies-list-card *ngFor="let movie of getMovies() | paginate: { itemsPerPage: 20, currentPage: page, totalItems: totalResults}"  class="card movies-list-card"
+  [movie]="movie"
+  >
+  </app-movies-list-card>
+
+</div>
+<pagination-controls (pageChange)="pageChanged($event)" class="my-pagination"></pagination-controls>
+
+

@@ -1,0 +1,14 @@
+<div *ngIf="movie" class="mt-3 ml-3 d-flex">
+  <section><img src="https://image.tmdb.org/t/p/w300{{movie.poster_path}}" alt="Card image cap"></section>
+  <section class="ml-3">
+    <div style="width: 850px">
+      <h5>{{ movie.title }}</h5>
+      <p>{{ movie.overview }}</p>
+    </div>
+    <div >
+      <app-stars-rating [rate]="movie.vote_average"></app-stars-rating>
+    </div>
+  </section>
+
+</div>
+

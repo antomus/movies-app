@@ -1,0 +1,12 @@
+<a routerLink="movies"><h2>Movies App</h2></a>
+<form class="form-inline">
+  <div class="form-group">
+    <input type="search" class="movie-search form-control" id="search-movie" #searchMovie (keydown.enter)="search(searchMovie.value)" style="width: 420px" placeholder="Search movie">
+  </div>
+</form>
+
+<div class="user-info">
+  <img src="assets/user.png" alt="user image">
+  <span class="username">Welcome John</span>
+</div>
+

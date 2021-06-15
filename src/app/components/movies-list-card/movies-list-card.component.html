@@ -1,0 +1,11 @@
+<a routerLink="/movies/{{movie.id}}" routerLinkActive="active">
+  <img class="card-img-top" src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="Card image cap">
+</a>
+<div class="card-body" style="min-height: 148px;">
+<h5 class="card-title">{{ (movie.title | slice:0:35) + '...' }}</h5>
+<p class="card-text" > {{ (movie.overview | slice:0:40) + '...'}} </p>
+</div>
+<div class="border-top movie-rating" style="min-height: 46px">
+  <app-stars-rating [rate]="movie.vote_average"></app-stars-rating>
+</div>
+
