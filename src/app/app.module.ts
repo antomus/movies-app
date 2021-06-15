@@ -10,7 +10,6 @@ import { MoviesListComponent } from './components/movies-list/movies-list.compon
 import { MoviesListCardComponent } from './components/movies-list-card/movies-list-card.component';
 import { PosterPreviewComponent } from './components/poster-preview/poster-preview.component';
 import { StarsRatingComponent } from './components/stars-rating/stars-rating.component';
-import { MovieInfoComponent } from './components/movie-info/movie-info.component';
 import { GenreBadgeComponent } from './components/genre-badge/genre-badge.component';
 import { UserInfoComponent } from './components/user-info/user-info.component';
 
@@ -42,7 +41,6 @@ const appRoutes: Routes = [
     MoviesListCardComponent,
     PosterPreviewComponent,
     StarsRatingComponent,
-    MovieInfoComponent,
     GenreBadgeComponent,
     UserInfoComponent,
     GenresListComponent,
